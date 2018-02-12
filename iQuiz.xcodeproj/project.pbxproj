@@ -14,6 +14,10 @@
 		1769F5452031636B007B86C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1769F5432031636B007B86C4 /* LaunchScreen.storyboard */; };
 		1769F5502031636B007B86C4 /* iQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1769F54F2031636B007B86C4 /* iQuizTests.swift */; };
 		1769F55B2031636B007B86C4 /* iQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1769F55A2031636B007B86C4 /* iQuizUITests.swift */; };
+		1769F56F20316AA0007B86C4 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1769F56E20316AA0007B86C4 /* ViewControllerTableViewCell.swift */; };
+		1769F5732031774C007B86C4 /* Avengers.png in Resources */ = {isa = PBXBuildFile; fileRef = 1769F5702031774C007B86C4 /* Avengers.png */; };
+		1769F5742031774C007B86C4 /* Mathematics.png in Resources */ = {isa = PBXBuildFile; fileRef = 1769F5712031774C007B86C4 /* Mathematics.png */; };
+		1769F5752031774C007B86C4 /* Science.png in Resources */ = {isa = PBXBuildFile; fileRef = 1769F5722031774C007B86C4 /* Science.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		1769F5562031636B007B86C4 /* iQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1769F55A2031636B007B86C4 /* iQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iQuizUITests.swift; sourceTree = "<group>"; };
 		1769F55C2031636B007B86C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1769F56E20316AA0007B86C4 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		1769F5702031774C007B86C4 /* Avengers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avengers.png; sourceTree = "<group>"; };
+		1769F5712031774C007B86C4 /* Mathematics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mathematics.png; sourceTree = "<group>"; };
+		1769F5722031774C007B86C4 /* Science.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Science.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +108,11 @@
 				1769F53A2031636B007B86C4 /* AppDelegate.swift */,
 				1769F53C2031636B007B86C4 /* ViewController.swift */,
 				1769F53E2031636B007B86C4 /* Main.storyboard */,
+				1769F56E20316AA0007B86C4 /* ViewControllerTableViewCell.swift */,
 				1769F5412031636B007B86C4 /* Assets.xcassets */,
+				1769F5702031774C007B86C4 /* Avengers.png */,
+				1769F5712031774C007B86C4 /* Mathematics.png */,
+				1769F5722031774C007B86C4 /* Science.png */,
 				1769F5432031636B007B86C4 /* LaunchScreen.storyboard */,
 				1769F5462031636B007B86C4 /* Info.plist */,
 			);
@@ -234,7 +246,10 @@
 			files = (
 				1769F5452031636B007B86C4 /* LaunchScreen.storyboard in Resources */,
 				1769F5422031636B007B86C4 /* Assets.xcassets in Resources */,
+				1769F5732031774C007B86C4 /* Avengers.png in Resources */,
+				1769F5742031774C007B86C4 /* Mathematics.png in Resources */,
 				1769F5402031636B007B86C4 /* Main.storyboard in Resources */,
+				1769F5752031774C007B86C4 /* Science.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +276,7 @@
 			files = (
 				1769F53D2031636B007B86C4 /* ViewController.swift in Sources */,
 				1769F53B2031636B007B86C4 /* AppDelegate.swift in Sources */,
+				1769F56F20316AA0007B86C4 /* ViewControllerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
