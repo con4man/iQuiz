@@ -10,19 +10,21 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    let topicList = ["Mathematics", "Avengers", "Science"]
-    
-    let descriptions = ["Mathematics is the study of such topics as quantity, structure, space, and change. There are many views among mathematicians and philosophers as to the exact scope and definition of mathematics.", "Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle. With a roster that has included Captain America, Iron Man, Ant-Man, Hulk, Thor, Wasp and dozens more over the years, the Avengers have come to be regarded as Earth's No. 1 team.", "A branch of knowledge or study dealing with a body of facts or truths systematically arranged and showing the operation of general laws"]
+    let topicData = TopicData.shared
+    var topics : [Topic]? = nil
+    var selectedTopic : Topic? = nil
+    @IBOutlet weak var topicTable: UITableView!
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return topicList.count
+        return topics!.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellTopic = topics![indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
-        cell.cellImage.image = UIImage(named: (topicList[indexPath.row] + ".png"))
-        cell.cellLabel.text = topicList[indexPath.row]
-        cell.cellDescription.text = descriptions[indexPath.row]
+        cell.cellImage.image = UIImage(named: (cellTopic.name + ".png"))
+        cell.cellLabel.text = cellTopic.name
+        cell.cellDescription.text = cellTopic.description
         
         return cell
     }
@@ -30,10 +32,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func settingsTapped(_ sender: Any) {
         // create the alert
         let alert = UIAlertController(title: "Settings", message: "Settings go here", preferredStyle: UIAlertControllerStyle.alert)
-        
         // add the actions (buttons)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-        
         // show the alert
         self.present(alert, animated: true, completion: nil)
     }
@@ -41,14 +41,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        topics = topicData.getTopics()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let questionView = segue.destination as! QuestionView
+        let indexPath = topicTable.indexPathForSelectedRow!
+        questionView.topic = self.topics?[indexPath.row]
+    }
+    
 }
-
