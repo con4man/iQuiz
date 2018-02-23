@@ -22,7 +22,7 @@
 		17967B37203410F00048F161 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17967B36203410F00048F161 /* AnswerView.swift */; };
 		17967B392034111C0048F161 /* FinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17967B382034111C0048F161 /* FinishView.swift */; };
 		17967B3B2034D3D70048F161 /* TopicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17967B3A2034D3D70048F161 /* TopicData.swift */; };
-		724F85C1203FE7F8009A6508 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F85C0203FE7F7009A6508 /* Reachability.swift */; };
+		17E601102040B55B0061F1A2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E6010F2040B55B0061F1A2 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,7 @@
 		17967B36203410F00048F161 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
 		17967B382034111C0048F161 /* FinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishView.swift; sourceTree = "<group>"; };
 		17967B3A2034D3D70048F161 /* TopicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicData.swift; sourceTree = "<group>"; };
-		724F85C0203FE7F7009A6508 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = ../../examples/Reachability/ReachabilityTest/Reachability.swift; sourceTree = "<group>"; };
+		17E6010F2040B55B0061F1A2 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +123,7 @@
 				17967B36203410F00048F161 /* AnswerView.swift */,
 				17967B34203410B90048F161 /* QuestionView.swift */,
 				1769F56E20316AA0007B86C4 /* ViewControllerTableViewCell.swift */,
-				724F85C0203FE7F7009A6508 /* Reachability.swift */,
+				17E6010F2040B55B0061F1A2 /* Reachability.swift */,
 				1769F5412031636B007B86C4 /* Assets.xcassets */,
 				1769F5702031774C007B86C4 /* Marvel Super Heroes.png */,
 				1769F5712031774C007B86C4 /* Mathematics.png */,
@@ -294,8 +294,8 @@
 				17967B37203410F00048F161 /* AnswerView.swift in Sources */,
 				1769F53B2031636B007B86C4 /* AppDelegate.swift in Sources */,
 				1769F56F20316AA0007B86C4 /* ViewControllerTableViewCell.swift in Sources */,
+				17E601102040B55B0061F1A2 /* Reachability.swift in Sources */,
 				17967B392034111C0048F161 /* FinishView.swift in Sources */,
-				724F85C1203FE7F8009A6508 /* Reachability.swift in Sources */,
 				17967B3B2034D3D70048F161 /* TopicData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
