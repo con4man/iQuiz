@@ -15,7 +15,7 @@ class QuestionView: UIViewController {
     var questionIndex = 0
     var score = 0
     var selectedOption :String?
-    
+
     @IBOutlet weak var question: UILabel!
     @IBOutlet weak var option1: UIButton!
     @IBOutlet weak var option2: UIButton!
@@ -25,23 +25,23 @@ class QuestionView: UIViewController {
     
     
     @IBAction func option1Selected(_ sender: Any) {
-        selectedOption = topic?.options[questionIndex][0]
-        showOptionSelection(number: 0)
-        submitBtn.isEnabled = true
-    }
-    @IBAction func option2Selected(_ sender: Any) {
-        selectedOption = topic?.options[questionIndex][1]
+        selectedOption = "1"
         showOptionSelection(number: 1)
         submitBtn.isEnabled = true
     }
-    @IBAction func option3Selected(_ sender: Any) {
-        selectedOption = topic?.options[questionIndex][2]
+    @IBAction func option2Selected(_ sender: Any) {
+        selectedOption = "2"
         showOptionSelection(number: 2)
         submitBtn.isEnabled = true
     }
-    @IBAction func option4Selected(_ sender: Any) {
-        selectedOption = topic?.options[questionIndex][3]
+    @IBAction func option3Selected(_ sender: Any) {
+        selectedOption = "3"
         showOptionSelection(number: 3)
+        submitBtn.isEnabled = true
+    }
+    @IBAction func option4Selected(_ sender: Any) {
+        selectedOption = "4"
+        showOptionSelection(number: 4)
         submitBtn.isEnabled = true
     }
     
@@ -50,11 +50,11 @@ class QuestionView: UIViewController {
         option2.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         option3.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         option4.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        if number == 0 {
+        if number == 1 {
             option1.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-        } else if number == 1 {
-            option2.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         } else if number == 2 {
+            option2.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        } else if number == 3 {
             option3.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         } else {
             option4.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
@@ -64,11 +64,11 @@ class QuestionView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         submitBtn.isEnabled = false
-        question.text = topic?.questions[questionIndex]
-        option1.setTitle(topic?.options[questionIndex][0], for: .normal)
-        option2.setTitle(topic?.options[questionIndex][1], for: .normal)
-        option3.setTitle(topic?.options[questionIndex][2], for: .normal)
-        option4.setTitle(topic?.options[questionIndex][3], for: .normal)
+        question.text = topic?.questions[questionIndex].text
+        option1.setTitle(topic?.questions[questionIndex].answers[0], for: .normal)
+        option2.setTitle(topic?.questions[questionIndex].answers[1], for: .normal)
+        option3.setTitle(topic?.questions[questionIndex].answers[2], for: .normal)
+        option4.setTitle(topic?.questions[questionIndex].answers[3], for: .normal)
     }
 
     override func didReceiveMemoryWarning() {

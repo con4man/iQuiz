@@ -44,3 +44,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension UIApplication {
+    var topicData : TopicData {
+        get {
+            return TopicData.shared
+        }
+    }
+}
+

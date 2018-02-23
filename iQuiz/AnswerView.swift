@@ -14,7 +14,8 @@ class AnswerView: UIViewController {
     var questionIndex = 0
     var selectedOption = ""
     var score = 0
-
+    
+    
     @IBOutlet weak var question: UILabel!
     @IBOutlet weak var answer: UILabel!
     @IBOutlet weak var result: UILabel!
@@ -30,9 +31,11 @@ class AnswerView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        question.text = topic?.questions[questionIndex]
-        answer.text = "The correct answer is : " + (topic?.answers[questionIndex])!
-        if selectedOption == topic?.answers[questionIndex] {
+        question.text = topic?.questions[questionIndex].text
+        let answerIndex = Int((topic?.questions[questionIndex].answer)!)! - 1
+        let answerString = topic?.questions[questionIndex].answers[answerIndex]
+        answer.text = "The correct answer is : " + answerString!
+        if Int(selectedOption) == answerIndex + 1 {
             result.text = "You answered correctly! 😁👍"
             score += 1
         } else {

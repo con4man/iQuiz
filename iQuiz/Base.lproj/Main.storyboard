@@ -21,14 +21,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bgB-75-ZKY">
-                                <rect key="frame" x="20" y="74" width="335" height="573"/>
+                                <rect key="frame" x="10" y="74" width="355" height="583"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="140" id="Qub-yr-PQt" customClass="ViewControllerTableViewCell" customModule="iQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="335" height="140"/>
+                                        <rect key="frame" x="0.0" y="28" width="355" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qub-yr-PQt" id="CUu-Vg-rwe">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="139.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="139.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j2h-5s-OHs">
@@ -38,7 +38,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgl-0v-89G">
-                                                    <rect key="frame" x="68.5" y="10" width="266.5" height="20.5"/>
+                                                    <rect key="frame" x="68.5" y="10" width="276.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -54,9 +54,9 @@
                                                 <constraint firstItem="sVO-9V-f5E" firstAttribute="top" secondItem="pgl-0v-89G" secondAttribute="bottom" constant="8" id="3u0-8S-SWh"/>
                                                 <constraint firstItem="pgl-0v-89G" firstAttribute="top" secondItem="CUu-Vg-rwe" secondAttribute="top" constant="10" id="5lk-X3-njk"/>
                                                 <constraint firstItem="j2h-5s-OHs" firstAttribute="leading" secondItem="CUu-Vg-rwe" secondAttribute="leading" constant="10" id="6gA-YG-DjY"/>
-                                                <constraint firstAttribute="trailing" secondItem="sVO-9V-f5E" secondAttribute="trailing" id="CQb-58-Paq"/>
+                                                <constraint firstAttribute="trailing" secondItem="sVO-9V-f5E" secondAttribute="trailing" constant="10" id="CQb-58-Paq"/>
                                                 <constraint firstItem="pgl-0v-89G" firstAttribute="leading" secondItem="j2h-5s-OHs" secondAttribute="trailing" constant="10" id="DIk-QV-DWe"/>
-                                                <constraint firstAttribute="trailing" secondItem="pgl-0v-89G" secondAttribute="trailing" id="EUy-uw-bOH"/>
+                                                <constraint firstAttribute="trailing" secondItem="pgl-0v-89G" secondAttribute="trailing" constant="10" id="EUy-uw-bOH"/>
                                                 <constraint firstAttribute="bottom" secondItem="sVO-9V-f5E" secondAttribute="bottom" constant="10" id="aNs-CH-ud9"/>
                                                 <constraint firstItem="sVO-9V-f5E" firstAttribute="leading" secondItem="j2h-5s-OHs" secondAttribute="trailing" constant="10" id="d6z-5A-oc1"/>
                                                 <constraint firstAttribute="bottom" secondItem="j2h-5s-OHs" secondAttribute="bottom" constant="10" id="jb2-Kc-GtI"/>
@@ -78,7 +78,7 @@
                                 </connections>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Drb-Kr-EW2">
-                                <rect key="frame" x="10" y="30" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="30" width="375" height="44"/>
                                 <items>
                                     <barButtonItem title="Settings" id="rE6-Y2-AMx">
                                         <connections>
@@ -90,13 +90,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Drb-Kr-EW2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="10" id="9cX-ca-aqD"/>
+                            <constraint firstItem="Drb-Kr-EW2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3RB-K5-cIh"/>
+                            <constraint firstItem="Drb-Kr-EW2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9cX-ca-aqD"/>
                             <constraint firstItem="bgB-75-ZKY" firstAttribute="top" secondItem="Drb-Kr-EW2" secondAttribute="bottom" id="Elq-oR-srr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bgB-75-ZKY" secondAttribute="bottom" constant="20" id="FUi-2F-xTb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bgB-75-ZKY" secondAttribute="trailing" constant="20" id="W1a-uR-0Ca"/>
-                            <constraint firstItem="Drb-Kr-EW2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="cs8-m7-Og9"/>
+                            <constraint firstItem="bgB-75-ZKY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="FUi-2F-xTb"/>
+                            <constraint firstItem="bgB-75-ZKY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="W1a-uR-0Ca"/>
+                            <constraint firstItem="Drb-Kr-EW2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cs8-m7-Og9"/>
                             <constraint firstItem="Drb-Kr-EW2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="j5y-TH-SiO"/>
-                            <constraint firstItem="bgB-75-ZKY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nnf-tT-dTD"/>
+                            <constraint firstItem="bgB-75-ZKY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="nnf-tT-dTD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -314,6 +315,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nfy-bq-30n"/>
+        <segue reference="Pvy-H4-Vf3"/>
     </inferredMetricsTieBreakers>
 </document>
